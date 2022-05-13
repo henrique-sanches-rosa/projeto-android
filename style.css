@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor0: #0A3E42;
+    --cor1: #15858F;
+    --cor2: #1DB4C2;
+    --cor3: #97C8CC;
+    --cor-link-visto: #ce9806;
+
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-texto: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte-android: 'Android', sans-serif;
+}
+body{
+    background-color: var(--cor3);
+}
+#titulo{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2), var(--cor1));
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    color: white;
+    height: 150px;
+}
+#titulo > h1{
+    font-size: 2.2em;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 25px 0px 15px 0px;
+    text-shadow: 1px 1px 2px black;
+}
+#titulo > p{
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+}
+nav{
+    background-color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    padding: 0px 0px 5px 10px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.445);
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 1em;
+}
+nav > a:hover{
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: var(--cor3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+    transition-duration: .4s;
+}
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0);
+}
+article > h1, h2{
+    font-family: var(--fonte-android);
+}
+article > h1{
+    color: var(--cor1);
+    font-size: 1.8em;
+    text-align: center;
+    padding: 30px 0px 20px 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+}
+article > h2{
+    background-image: linear-gradient(to left, transparent, var(--cor3));
+    margin: 30px 0px;
+    padding: 0px 0px 0px 35px;
+}
+main p{
+    font-family: var(--fonte-texto);
+    text-indent: 20px;
+    padding: 0px 15px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+img{
+    margin: auto;
+    display: block;
+    padding: 15px 0px;
+    max-width: 100%;
+}
+main > article > div{
+    background-color: var(--cor1);
+    text-align: center;
+    height: 355px;
+}
+article > div{
+    margin: 20px 0px;
+}
+iframe{
+    margin: 20px 0px;
+    max-width: 100%;
+}
+aside{
+    background-color: var(--cor3);
+    max-width: 750px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.685);
+}
+aside > h3{
+    font-family: var(--fonte-destaque);
+    font-weight: lighter;
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+aside > p{
+    padding: 10px 10px;
+}
+aside > ul{
+    font-family: var(--fonte-texto);
+    font-size: 0.9em;
+    list-style-type:'\2714\00A0';
+    list-style-position: inside;
+    padding: 0px 0px 0px 20px;
+    columns: 2;
+}
+#final{
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+main > article > p > a::after, aside > p > a::after{
+    content: ' \01F517';
+}
+footer{
+    font-family: var(--fonte-texto);
+    font-size: 0.8em;
+    text-align: center;
+    background-color: var(--cor1);
+    color: white;
+    height: 30px;
+    margin-top: 30px;
+}
+footer > p{
+    padding-top: 6px;
+}
+strong{
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+article > a:visited{
+    color: var(--cor-link-visto);
+    
+}
+a:active{
+    color: red;
+}
