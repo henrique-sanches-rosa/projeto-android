@@ -31,7 +31,7 @@ body{
     text-align: center;
     font-family: var(--fonte-destaque);
     color: white;
-    height: 150px;
+    min-height: 150px;
 }
 #titulo > h1{
     font-size: 2.2em;
